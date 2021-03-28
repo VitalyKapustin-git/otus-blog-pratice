@@ -1,0 +1,96 @@
+@font-face {
+	font-family: 'Andromeda';
+	src: url('../fonts/Andromeda-eR2n.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body, .root-wrapper-main {
+	height: 100%;
+	width: 100%;
+	color: white;
+}
+
+.root-wrapper-main {
+	background-image: url('../images/mars.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.root-wrapper-main {
+	position: relative;
+	height: 100%;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+header {
+	height: 48px;
+	background: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu {
+	width: 100%;
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	background-image: url('../images/mars-icon.png');
+	background-size: 32px 32px;
+	background-repeat: no-repeat;
+	min-height: 32px;
+	min-width: 32px;
+	background-position: center top;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	li {
+		font-family: Andromeda;
+		padding: 5px;
+		cursor: pointer;
+		border-right: solid 1px white;
+		&:hover {
+			transition: color 0.5s;
+			color: gold;
+		}
+		&:last-child {
+			border: 0;
+		}
+	}
+}
+
+.mars-agitation
+{
+	position: absolute;
+	padding: 16px;
+	max-width: 70%;
+	min-width: 20%;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+
+	h1 {
+		color: white;
+		font-family: Andromeda;
+		font-weight: 100;
+		font-size: 54px;
+		text-align: center;
+	}
+}
