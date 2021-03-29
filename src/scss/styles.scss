@@ -62,13 +62,15 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	li {
-		font-family: Andromeda;
-		padding: 5px;
-		cursor: pointer;
 		border-right: solid 1px white;
-		&:hover {
-			transition: color 0.5s;
-			color: gold;
+		a {
+			font-family: Andromeda;
+			padding: 5px;
+			cursor: pointer;
+			&:hover {
+				transition: color 0.5s;
+				color: gold;
+			}
 		}
 		&:last-child {
 			border: 0;
