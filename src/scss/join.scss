@@ -1,70 +1,70 @@
-.root-wrapper-join {
-	background-image: url('../images/marsnight.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100%;
-	width: 100%;
-	position: relative;
-}
-
 .join-form {
-	position: absolute;
-	transform: translate(-50%,-50%);
-	top: 50%;
-	left: 50%;
-	width: 50%;
-	height: 70%;
-	// border: solid 2px red;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	.form-header {
-		max-width: 39.99%;
-		h1 {
-			font-family: Andromeda;
-			text-align: center;
-			padding: 16px;
-		}
-	}
-	.form-fields {
-		max-width: 49.99%;
-		min-width: 49.99%;
-		min-height: 100%;
-		// border: solid 1px gold;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		input {
-			margin: 16px;
-			background: rgba($color: #1a1a1a, $alpha: 1.0);
-			min-height: 32px;
-			-webkit-box-sizing: border-box;
-			box-sizing: border-box;
-			padding-left: 12px;
-			border: none;
-			// border-radius: 16px;
-			color: white;
-			&:focus {
-				outline: 1px solid #666;
-			}
-		}
-	}
+  background-image: url("../images/marsnight.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
-.submit-journey {
-	max-width: 60%;
-	background: rgba($color: #1a1a1a, $alpha: 1.0);
-	color: white;
-	font-family: Andromeda;
-	font-size: 32px;
-	font-weight: 900;
-	padding: 8px;
-	border:none;
-	cursor: pointer;
-	margin: 0 auto;
-	transition: background-color .4s;
-	&:hover {
-		background-color: rgba(252, 169, 24, 0.427)
-	}
+.join-form__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 70%;
+}
+
+.join-form__header {
+  max-width: 39.99%;
+  font-family: Andromeda, Arial, sans-serif;
+  text-align: center;
+  padding: 16px;
+}
+
+.join-form__fields {
+  width: 49.99%;
+  max-width: 49.99%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.join-form__input-field {
+  margin: 16px;
+  background: rgba($color: #1a1a1a, $alpha: 1);
+  min-height: 32px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 12px;
+  border: none;
+  color: white;
+
+  &:focus {
+    outline: 1px solid #666;
+  }
+}
+
+.join-form__submit-journey {
+  max-width: 60%;
+  background: rgba($color: #1a1a1a, $alpha: 1);
+  color: white;
+  font-family: Andromeda, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: background-color 0.4s;
+
+  &:hover {
+    background-color: rgba(252, 169, 24, 0.427);
+  }
 }

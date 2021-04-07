@@ -1,98 +1,89 @@
 @font-face {
-	font-family: 'Andromeda';
-	src: url('../fonts/Andromeda-eR2n.ttf');
+  font-family: "Andromeda";
+  src: url("../fonts/Andromeda-eR2n.ttf");
 }
 
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-html, body, .root-wrapper-main {
-	height: 100%;
-	width: 100%;
-	color: white;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: white;
 }
 
-.root-wrapper-main {
-	background-image: url('../images/mars.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+.main {
+  position: relative;
+  height: 100%;
+  background-image: url("../images/mars.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.root-wrapper-main {
-	position: relative;
-	height: 100%;
+.header {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
 }
 
-a {
-	color: white;
-	text-decoration: none;
-}
-
-header {
-	height: 48px;
-	background: black;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.menu {
-	width: 100%;
-	background-color: black;
-	display: flex;
-	justify-content: space-between;
+.menu__list {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
 .logo {
-	background-image: url('../images/mars-icon.png');
-	background-size: 32px 32px;
-	background-repeat: no-repeat;
-	min-height: 32px;
-	min-width: 32px;
-	background-position: center top;
-	margin: 0 10px;
-	cursor: pointer;
+  max-width: 32px;
+  max-height: 32px;
+  margin-left: 6px;
 }
 
-ul {
-	list-style: none;
-	display: flex;
-	justify-content: space-between;
-	li {
-		border-right: solid 1px white;
-		a {
-			font-family: Andromeda;
-			padding: 5px;
-			cursor: pointer;
-			&:hover {
-				transition: color 0.5s;
-				color: gold;
-			}
-		}
-		&:last-child {
-			border: 0;
-		}
-	}
+.logo__img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
 }
 
-.mars-agitation
-{
-	position: absolute;
-	padding: 16px;
-	max-width: 70%;
-	min-width: 20%;
-	transform: translate(-50%,-50%);
-	top: 50%;
-	left: 50%;
+.menu__list-item {
+  border-right: solid 1px white;
+  padding: 5px;
 
-	h1 {
-		color: white;
-		font-family: Andromeda;
-		font-weight: 100;
-		font-size: 54px;
-		text-align: center;
-	}
+  &:last-child {
+    border: none;
+  }
+}
+
+.menu__link {
+  font-family: Andromeda, Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    transition: color 0.5s;
+    color: gold;
+  }
+}
+
+.main__agitation {
+  position: absolute;
+  padding: 16px;
+  max-width: 70%;
+  min-width: 20%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-family: Andromeda, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 54px;
+  text-align: center;
 }
