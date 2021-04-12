@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Last step to fly</title>
+  </head>
+  <body>
+    <%= require('html-loader!./header.html').default %>
+
+    <div class="join-form">
+      <div class="join-form__container">
+        <div class="join-form__header">
+          <h1>BECOME AN ASTRONAUT</h1>
+        </div>
+        <div class="join-form__fields">
+          <input
+            class="join-form__input-field"
+            type="text"
+            name="first_name"
+            placeholder="First Name"
+          />
+          <input
+            class="join-form__input-field"
+            type="text"
+            name="last_name"
+            placeholder="Last Name"
+          />
+          <input
+            class="join-form__input-field"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <input
+            class="join-form__input-field"
+            type="tel"
+            name="phone"
+            placeholder="Phone number"
+          />
+          <button class="join-form__submit-journey">ignition</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

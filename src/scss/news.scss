@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+.news-block {
+  background-color: whitesmoke;
+  min-height: 100%;
+}
+
+.news-block__container {
+  display: flex;
+  color: black;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.news-block__header {
+  padding: 24px;
+  font-family: Andromeda, Arial, sans-serif;
+  color: rgb(198, 65, 44);
+}
+
+.news-block__items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.news-block__item {
+  border-top: solid 1px gainsboro;
+  display: flex;
+  justify-content: space-between;
+  margin: 4px;
+  padding: 12px;
+  max-height: 300px;
+  align-content: center;
+}
+
+.news-block__prev-img {
+  background-image: url("../images/inge.jpg");
+  background-size: 320px 240px;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 240px;
+}
+
+.item2__img {
+  background-image: url("../images/persev.jpg");
+}
+
+.news-block__date {
+  color: #5a5a5a;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.news-block__item-content {
+  width: 75%;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #222;
+  font-weight: 300;
+  padding-left: 12px;
+}
+
+.news-block__article-header {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.news-block__link {
+  text-decoration: none;
+  color: #222;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.news-block__article-prev {
+  font-size: 18px;
+  line-height: 26px;
+}
