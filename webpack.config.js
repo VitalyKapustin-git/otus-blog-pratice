@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const StylelintPlugin = require("stylelint-webpack-plugin");
 
 module.exports = {
+  mode: 'development',
   entry: "./src/index.js",
   output: {
     filename: "bundle.js",
@@ -11,11 +12,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.(html)$/,
-        loader: 'html-loader',
-        include: path.resolve(__dirname, "dist"),
-      },
       { 
         test: /\.(jpg|png|ttf)$/,
         type: 'asset/resource',
@@ -32,8 +28,8 @@ module.exports = {
       template: "./src/index.html",
     }),
     new HtmlWebpackPlugin({
-      filename: "item1.html",
-      template: "./src/item1.html",
+      filename: "ingenuity-news.html",
+      template: "./src/ingenuity-news.html",
     }),
     new HtmlWebpackPlugin({
       filename: "join.html",
